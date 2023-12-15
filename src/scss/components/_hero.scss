@@ -1,0 +1,75 @@
+.hero{
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 190px;
+  padding-bottom: 40px;
+  min-height: 776px;
+
+  color: var(--light-color);
+  background-size: cover;
+  background: url("../img/image.jpg") no-repeat center;
+
+  &__content{
+    grid-column: 6 span;
+
+  }
+  &__title{
+    margin: 0;
+    font-family: var(--font-family );
+    font-weight: 400;
+    font-size: 38px;
+    letter-spacing: 1.2px;
+  }
+  &__description{
+    margin: 0 0 20px 0;
+
+  }
+
+  &__bottom-container{
+    margin-top: auto;
+    width: 100%;
+  }
+  &__subtitle{
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  &__bottom{
+    //display: grid;
+    padding: 0 20px;
+  }
+
+  &__item{
+    grid-column: 2 span;
+  }
+
+  &__link {
+    display: block;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    color: inherit;
+
+
+    // hover focus
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+
+    &:active {
+      color: var(--active-color);
+      border-color: var(--active-color);
+    }
+  }
+}
+
+
+//57/33 - https://www.youtube.com/watch?v=zwB3nrWU3gA&ab_channel=MaxGraph-c%D0%B0%D0%B9%D1%82%D1%8B%D0%BA%D0%B0%D0%BA%D1%81%D1%82%D1%80%D0%B0%D1%81%D1%82%D1%8C

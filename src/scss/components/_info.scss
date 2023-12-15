@@ -1,0 +1,67 @@
+.info {
+  position: relative;
+  display: flex;
+  background-color: #001414;
+  height: 680px;
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    width: 287px;
+    height: 100%;
+    background-image: url("../img/svg/absleft.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  &::after {
+    content: "";
+    flex-shrink: 0;
+    width: 287px;
+    height: 100%;
+    background-image: url("../img/svg/absright.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  &__content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 82px;
+    border-left: 1px solid #003331;
+    border-right: 1px solid #003331;
+  }
+
+  &__text {
+    //text-align: center;
+max-width: 542px;
+  }
+
+  &__title {
+    margin: 0 auto;
+
+    margin-bottom: 21px;
+    font-size: 22px;
+    line-height: 22px;
+    color: var(--light-color)
+  }
+
+  &__description {
+    margin: 0 auto;
+
+
+    margin: 0;
+    font-size: 15px;
+    color: white;
+    line-height: 24px;
+  }
+
+}

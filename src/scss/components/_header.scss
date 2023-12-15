@@ -1,0 +1,52 @@
+.header {
+  padding: 20px 0;
+  &__container {
+    align-items: center;
+    justify-content: space-between;
+  }
+  &--position{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+}
+.logo-title{
+  color: var(--light-color);
+  display: contents;
+  font-size: 20px;
+}
+
+.nav {
+  align-items: center;
+  padding-right: 16px;
+
+  &__list {
+    align-items: center;
+    margin-right: 32px;
+    gap: 51px;
+  }
+  &__link{
+    font-size: 16px;
+    color: var(--light-color);
+    transition: сolor 0.3s ease-in-out; //--- НЕ РАБОТАЕТ!!! 28.40
+
+    &:focus{
+      outline: none;
+    }
+
+    //миксин - отключение ховера на mob оставляем только на desc
+    @include hover{
+      color: var(--accent-color);
+    }
+    &:active{
+      color: var(--active-color);
+    }
+
+  }
+}
+.nav__link.focus-visible {
+outline-color: 1px solid var(--active-color);
+  outline-offset: 3px;
+}

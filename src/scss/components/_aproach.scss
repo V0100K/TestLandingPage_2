@@ -1,0 +1,94 @@
+.approach {
+  &__top {
+    padding: 80px;
+    background-color: #f6f5f5;
+  }
+
+  &__left {
+    grid-column: 5 span;
+    padding-top: 33px;
+
+  }
+
+  &__right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    grid-column: 10 / 4 span;
+    gap: 10px;
+  }
+
+  &__image{
+    //max-width: 100%;
+    //height: revert-layer;
+
+  }
+
+  &__title {
+    margiin: 0;
+    margin-bottom: 13px;
+    font-size: 22px;
+    color: #000;
+  }
+
+  &__description {
+    margiin: 0;
+    margin-bottom: 37px;
+    font-size: 15px;
+    color: #000;
+    line-height: 24px;
+  }
+
+  &__btn {
+    padding: 16px 34px;
+    border: 1px solid rgba(53, 83, 98, 0.4);
+    color: black;
+  }
+
+
+  &__bottom {
+    padding: 24px 0;
+    background-color: var(--light-color);
+  }
+
+
+  &__list {
+    grid-template-columns: repeat(10, 2fr);
+  }
+  &__item{
+    grid-column: 2 span;
+  }
+
+  &__link{
+    display: block;
+    border-top: 1px solid rgba(53, 83, 98, 0.6);
+    padding-top: 16px;
+    padding-left: 32px;
+    font-size: 15px;
+    color: black;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    background-size: 24px 24px;
+    background-position: left center;
+    background-repeat: no-repeat;
+
+    &:focus{
+      outline: none;
+    }
+    @include hover{
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+    &:active{
+      color: var(--active-color);
+      border-color: var(--active-color);
+    }
+
+  }
+&__small-img{
+  display: inline-flex;
+  width: 20px;
+  margin-right: 0.5rem;
+  transform: translateY(0.3rem);
+
+}
+}
